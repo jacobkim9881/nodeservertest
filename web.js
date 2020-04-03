@@ -5,9 +5,9 @@ const app = express();
 
 const con = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'node'
+    user: 'kytdark',
+    password: 'xowhswkf7*',
+    database: 'kytdark'
 });
 
 app.get('/', (err, result) => {
@@ -16,6 +16,6 @@ app.get('/', (err, result) => {
     });    
 });
 
-const port = 3000;
+const port = 8001;
 
 app.listen(port, console.log(`Server is connected :  http://localhost:${port}/`));
