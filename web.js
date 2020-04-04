@@ -4,10 +4,10 @@ const mysql = require('mysql')
 const app = express();
 
 const con = mysql.createConnection({
-    host: 'nodejs-005.cafe24.com',
-    user: 'kytdark',
-    password: 'xowhswkf7*',
-    database: 'kytdark'
+    host: 'nodejs-***.cafe24.com',
+    user: 'your-id',
+    password: 'your-password',
+    database: 'databasename'
 });
 
 app.get('/', (err, result) => {
@@ -16,6 +16,4 @@ app.get('/', (err, result) => {
     });    
 });
 
-const port = 8001;
-
-app.listen(port, console.log(`Server is connected :  http://localhost:${port}/`));
+app.listen(port, console.log(`Server is connected`));
