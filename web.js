@@ -4,8 +4,8 @@ const mysql = require('mysql')
 const app = express();
 
 const con = mysql.createConnection({
-    host: 'nodejs-***.cafe24.com',
-    user: 'your-id',
+    host: 'localhost',
+    user: 'root',
     password: 'your-password',
     database: 'databasename'
 });
